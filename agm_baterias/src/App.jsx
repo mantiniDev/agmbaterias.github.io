@@ -18,7 +18,7 @@ function App() {
           <div className="logo">
             <div className="logo-box">
               <img src={logo} alt="AGM Logo" />
-            </div>
+          </div>
 
             <div>
               <h1>AGM Baterias</h1>
@@ -162,7 +162,7 @@ function App() {
         <div className="container footer-grid">
           <div className="footer-brand">
             <div className="footer-logo">
-              <img src="/logo.png" alt="AGM Logo" />
+              <img src={logo} alt="AGM Logo" />
 
               <div>
                 <h3>AGM Baterias</h3>
