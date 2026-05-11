@@ -16,7 +16,7 @@ function App() {
         <div className="container nav">
           <div className="logo">
             <div className="logo-box">
-              <img src="/logo.png" alt="AGM Logo" />
+              <img src="agm_baterias/imagens/logo_bateria.png" alt="AGM Logo" />
             </div>
 
             <div>
@@ -73,15 +73,9 @@ function App() {
             </div>
           </div>
 
-          <div className="hero-car">
-            <img
-              src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d?auto=format&fit=crop&w=1400&q=80"
-              alt="Carro AGM"
-            />
+          <div className="hero-car">          
 
             <div className="plate">
-              <strong>AGM</strong>
-              <span>BATERIAS</span>
             </div>
           </div>
         </div>
