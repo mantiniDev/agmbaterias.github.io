@@ -1,4 +1,5 @@
 import "./index.css";
+import logo from './assets/imagens/logo_bateria.png'
 
 function App() {
   return (
@@ -16,7 +17,7 @@ function App() {
         <div className="container nav">
           <div className="logo">
             <div className="logo-box">
-              <img src="agm_baterias/src/assets/imagens/logo_bateria.png" alt="AGM Logo" />
+              <img src={logo} alt="AGM Logo" />
             </div>
 
             <div>
