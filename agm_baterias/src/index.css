@@ -12,6 +12,12 @@ body {
   color: white;
 }
 
+.logo-box img {
+  height: 52px;
+  width: auto;
+  object-fit: contain;
+}
+
 .container {
   width: 100%;
   max-width: 1300px;
