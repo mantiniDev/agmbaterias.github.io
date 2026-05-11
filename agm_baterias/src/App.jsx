@@ -16,7 +16,7 @@ function App() {
         <div className="container nav">
           <div className="logo">
             <div className="logo-box">
-              <img src="agm_baterias/imagens/logo_bateria.png" alt="AGM Logo" />
+              <img src="agm_baterias/src/assets/imagens/logo_bateria.png" alt="AGM Logo" />
             </div>
 
             <div>
@@ -73,11 +73,7 @@ function App() {
             </div>
           </div>
 
-          <div className="hero-car">          
-
-            <div className="plate">
-            </div>
-          </div>
+          <div className="hero-car"></div>
         </div>
       </section>
 
