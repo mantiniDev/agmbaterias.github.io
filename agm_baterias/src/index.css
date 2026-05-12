@@ -274,25 +274,53 @@ nav a:hover { color: #ffc400; }
 /* ─── RESPONSIVE 992px ─── */
 @media(max-width: 992px) {
 
+  .hero-grid {
+    grid-template-columns: 1fr;  /* ← uma coluna só */
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
   .hero-logo-title {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 16px;
+  }
+
+  .hero-logo {
+    height: 150px;
+    margin-left: 0;
+    order: -1;  /* logo aparece acima do texto */
+  }
+
+  .hero-content {
+    display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
 
-  .hero-logo {
-    height: 180px;
-    margin-left: 0;  /* remove o empurrão para direita no mobile */
-    margin-top: 20px;
-  }
-
   .hero-content h2 {
-    font-size: 60px;
+    font-size: 52px;
     text-align: center;
   }
 
   .hero-content h3 {
-    font-size: 40px;
+    font-size: 36px;
     text-align: center;
+  }
+
+  .hero-content p {
+    text-align: center;
+    font-size: 16px;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .hero-car {
+    display: none;  /* esconde a div vazia do carro no mobile */
   }
 }
