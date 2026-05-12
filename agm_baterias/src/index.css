@@ -109,8 +109,7 @@ nav a:hover { color: #ffc400; }
   height: 280px;  /* era 160px, agora maior */
   width: auto;
   object-fit: contain;
-  flex-shrink: 0;
-  margin-left: auto; 
+  flex-shrink: 0; 
 }
 
 @media(max-width: 992px) {
@@ -264,60 +263,6 @@ nav a:hover { color: #ffc400; }
   font-size: 14px;
 }
 
-/* ─── RESPONSIVE 992px ─── */
-@media(max-width: 992px) {
-
-  .hero-grid {
-    grid-template-columns: 1fr;
-    text-align: center;
-    padding-top: 100px;
-  }
-
-  .hero-content h2 { font-size: 60px; }
-  .hero-content h3 { font-size: 40px; }
-
-  .hero-buttons { justify-content: center; flex-wrap: wrap; }
-
-  .brands-grid,
-  .testimonial-grid { grid-template-columns: 1fr 1fr; }
-
-  nav { display: none; }
-
-  .logo-box img { width: 250px; height: auto; }
-
-  .nav { flex-direction: column; align-items: center; gap: 16px; text-align: center; }
-
-  .logo { flex-direction: column; align-items: center; text-align: center; }
-
-  .logo-box { justify-content: center; }
-
-  .hero-content { display: flex; flex-direction: column; align-items: center; text-align: center; }
-
-  .hero-content p { text-align: center; margin: 20px auto 0; }
-
-  .badge { text-align: center; }
-
-  .plate {
-    position: relative;
-    bottom: auto;
-    left: auto;
-    transform: none;
-    margin: 20px auto 0;
-    display: inline-block;
-  }
-
-  .brands h2,
-  .testimonials h2 { text-align: center; }
-
-  .topbar { flex-direction: column; align-items: center; text-align: center; gap: 8px; }
-
-  /* Footer responsive */
-  .footer-grid { grid-template-columns: 1fr; text-align: center; }
-  .footer-logo { justify-content: center; }
-  .footer-text { margin: auto; }
-  .footer-links, .footer-contact { align-items: center; }
-}
-
 .dev-link {
   color: #ffc400;
   text-decoration: none;
@@ -325,4 +270,29 @@ nav a:hover { color: #ffc400; }
 }
 .dev-link:hover {
   color: #fff;
+}
+/* ─── RESPONSIVE 992px ─── */
+@media(max-width: 992px) {
+
+  .hero-logo-title {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-logo {
+    height: 180px;
+    margin-left: 0;  /* remove o empurrão para direita no mobile */
+    margin-top: 20px;
+  }
+
+  .hero-content h2 {
+    font-size: 60px;
+    text-align: center;
+  }
+
+  .hero-content h3 {
+    font-size: 40px;
+    text-align: center;
+  }
 }
