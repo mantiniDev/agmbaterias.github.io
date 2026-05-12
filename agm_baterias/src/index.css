@@ -280,21 +280,41 @@ nav a:hover {
   object-fit: contain;
 }
 
+.testimonial-card {
+  background: #3f3c3c;
+  display: flex;
+  flex-direction: column;  /* ← coluna, não linha */
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  gap: 12px;
+  transition: 0.3s;
+}
+
 .testimonial-card img {
   width: 90px;
   height: 90px;
   border-radius: 50%;
   object-fit: cover;
   border: 4px solid #ffc400;
-  margin-bottom: 20px;
 }
 
 .testimonial-card h3 {
-  margin-bottom: 10px;
+  margin-bottom: 6px;
 }
 
 .testimonial-card p {
   color: #bbb;
+}
+
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 /* ─── FOOTER ─── */
@@ -380,8 +400,23 @@ nav a:hover {
   color: #fff;
 }
 
+
 /* ─── RESPONSIVE 992px ─── */
 @media(max-width: 992px) {
+
+  .hero {
+    overflow-x: hidden;
+  }
+
+  .hero-grid {
+    overflow-x: hidden;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .brands-grid {
+    overflow-x: hidden;
+  }
 
   .hero-grid {
     grid-template-columns: 1fr;
@@ -444,46 +479,46 @@ nav a:hover {
   }
 
   /* Testimonials */
-.testimonial-grid {
-  grid-template-columns: 1fr;
-  max-width: 380px;
-  margin: 0 auto;
-}
+  .testimonial-grid {
+    grid-template-columns: 1fr;
+    max-width: 380px;
+    margin: 0 auto;
+  }
 
-.testimonial-card {
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  height: auto;
-  padding: 30px 20px;
-}
+  .testimonial-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: auto;
+    padding: 30px 20px;
+  }
 
-/* Footer */
-.footer-grid {
-  grid-template-columns: 1fr;
-  text-align: center;
-}
+  /* Footer */
+  .footer-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
 
-.footer-logo {
-  justify-content: center;
-}
+  .footer-logo {
+    justify-content: center;
+  }
 
-.footer-text {
-  margin: 0 auto;
-}
+  .footer-text {
+    margin: 0 auto;
+  }
 
-.footer-links,
-.footer-contact {
-  align-items: center;
-}
+  .footer-links,
+  .footer-contact {
+    align-items: center;
+  }
 
-/* Container geral — evita corte lateral */
-.container {
-  padding: 0 16px;
-  overflow-x: hidden;
-}
+  /* Container geral — evita corte lateral */
+  .container {
+    padding: 0 16px;
+    overflow-x: hidden;
+  }
 
-body {
-  overflow-x: hidden;
-}
+  body {
+    overflow-x: hidden;
+  }
 }
