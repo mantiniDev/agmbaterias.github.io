@@ -283,7 +283,8 @@ nav a:hover {
 .testimonial-card {
   background: #3f3c3c;
   display: flex;
-  flex-direction: column;  /* ← coluna, não linha */
+  flex-direction: column;
+  /* ← coluna, não linha */
   align-items: center;
   justify-content: center;
   padding: 30px;
@@ -403,6 +404,28 @@ nav a:hover {
 
 /* ─── RESPONSIVE 992px ─── */
 @media(max-width: 992px) {
+  .nav {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding: 10px 16px;
+  }
+
+  .btn-green {
+    font-size: 0.75rem;
+    padding: 10px 14px;
+    white-space: nowrap;
+  }
+
+  .logo-box {
+    padding: 0 10px;
+  }
+
+  .logo-box img {
+    width: 120px;
+    height: auto;
+  }
 
   .hero {
     overflow-x: hidden;
