@@ -161,10 +161,7 @@ function App() {
 
           <div className="footer-links">
             <h4>Links</h4>
-            <a href="#home">Home</a>
-            <a href="#marcas">Vantagens</a>
-            <a href="#avaliacoes">Avaliações</a>
-            <a href="#contato">Contato</a>
+            <a href="www.agmbaterias.com.br">Home</a>
           </div>
 
           <div className="footer-contact">
