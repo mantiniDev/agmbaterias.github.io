@@ -97,6 +97,32 @@ nav a:hover { color: #ffc400; }
 .btn-green  { background: #1db954; color: white; }
 
 /* ─── HERO ─── */
+.hero-logo-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  margin-bottom: 20px;
+}
+
+.hero-logo {
+  height: 280px;  /* era 160px, agora maior */
+  width: auto;
+  object-fit: contain;
+  flex-shrink: 0;
+  margin-left: auto; 
+}
+
+@media(max-width: 992px) {
+  .hero-logo-title {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-logo {
+    height: 120px;
+  }
+}
 .hero {
   position: relative;
   min-height: 100vh;

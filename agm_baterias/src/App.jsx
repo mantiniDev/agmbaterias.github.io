@@ -4,8 +4,9 @@ import moura from "./assets/imagens/moura-256.png";
 import heliar from "./assets/imagens/heliar-256.png";
 import acdelco from "./assets/imagens/acdelco-256.png";
 
-const WHATSAPP = "https://wa.me/5519999939784?text=Ol%C3%A1%2C%20preciso%20de%20uma%20bateria!";
-const PHONE    = "tel:+5519999939784";
+const WHATSAPP =
+  "https://wa.me/5519999939784?text=Ol%C3%A1%2C%20preciso%20de%20uma%20bateria!";
+const PHONE = "tel:+5519999939784";
 const DEV_SITE = "https://mantini.ia.br";
 
 function App() {
@@ -28,15 +29,14 @@ function App() {
             </div>
           </div>
 
-          <nav>
-            <a href="#home">Home</a>
-            <a href="#marcas">Vantagens</a>
-            <a href="#como-funciona">Como Funciona</a>
-            <a href="#avaliacoes">Avaliações</a>
-            <a href="#contato">Contato</a>
-          </nav>
+          {/* nav removida */}
 
-          <a href={WHATSAPP} target="_blank" rel="noopener noreferrer" className="btn-green">
+          <a
+            href={WHATSAPP}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-green"
+          >
             WhatsApp
           </a>
         </div>
@@ -50,14 +50,19 @@ function App() {
           <div className="hero-content">
             <div className="badge">⚡ TROCA DE BATERIA 24 HORAS</div>
 
-            <h2>
-              TROCA DE <br />
-              <span>BATERIA</span>
-              <br />
-              EM CAMPINAS
-            </h2>
-
-            <h3>24 HORAS</h3>
+            {/* Logo grande ao lado do texto */}
+            <div className="hero-logo-title">
+              <div>
+                <h2>
+                  TROCA DE <br />
+                  <span>BATERIA</span>
+                  <br />
+                  EM CAMPINAS
+                </h2>
+                <h3>24 HORAS</h3>
+              </div>
+              <img src={logo} alt="AGM Logo" className="hero-logo" />
+            </div>
 
             <p>
               Entrega e instalação rápida em até
@@ -66,7 +71,12 @@ function App() {
             </p>
 
             <div className="hero-buttons">
-              <a href={WHATSAPP} target="_blank" rel="noopener noreferrer" className="btn-green">
+              <a
+                href={WHATSAPP}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-green"
+              >
                 📲 WhatsApp Agora
               </a>
               <a href={PHONE} className="btn-yellow">
@@ -105,17 +115,26 @@ function App() {
 
           <div className="testimonial-grid">
             <div className="testimonial-card">
-              <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Cliente" />
+              <img
+                src="https://randomuser.me/api/portraits/men/32.jpg"
+                alt="Cliente"
+              />
               <h3>Carlos Eduardo</h3>
               <p>Atendimento rápido e instalação impecável.</p>
             </div>
             <div className="testimonial-card">
-              <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Cliente" />
+              <img
+                src="https://randomuser.me/api/portraits/women/44.jpg"
+                alt="Cliente"
+              />
               <h3>Juliana Andrade</h3>
               <p>Resolveram tudo muito rápido.</p>
             </div>
             <div className="testimonial-card">
-              <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Cliente" />
+              <img
+                src="https://randomuser.me/api/portraits/men/75.jpg"
+                alt="Cliente"
+              />
               <h3>Ricardo Almeida</h3>
               <p>Preço justo e atendimento excelente.</p>
             </div>
@@ -126,7 +145,6 @@ function App() {
       {/* FOOTER */}
       <footer id="contato" className="footer">
         <div className="container footer-grid">
-
           <div className="footer-brand">
             <div className="footer-logo">
               <img src={logo} alt="AGM Logo" />
@@ -136,7 +154,8 @@ function App() {
               </div>
             </div>
             <p className="footer-text">
-              Atendimento rápido com entrega e instalação em toda Campinas e região.
+              Atendimento rápido com entrega e instalação em toda Campinas e
+              região.
             </p>
           </div>
 
@@ -161,12 +180,16 @@ function App() {
             <p>📍 Campinas - SP</p>
             <p>🟢 Atendimento 24h</p>
           </div>
-
         </div>
 
         <div className="footer-bottom">
           © 2025 AGM Baterias — Todos os direitos reservados |{" "}
-          <a href={DEV_SITE} target="_blank" rel="noopener noreferrer" className="dev-link">
+          <a
+            href={DEV_SITE}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="dev-link"
+          >
             Desenvolvido por Mantini IA
           </a>
         </div>
