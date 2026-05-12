@@ -401,9 +401,22 @@ nav a:hover {
   color: #fff;
 }
 
+html, body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
 
 /* ─── RESPONSIVE 992px ─── */
 @media(max-width: 992px) {
+
+  .brands h2,
+  .testimonials h2 {
+    font-size: 28px;
+    padding: 0 16px;
+    word-break: break-word;
+  }
+
   .nav {
     flex-direction: row;
     justify-content: space-between;
