@@ -1,5 +1,9 @@
 import "./index.css";
-import logo from './assets/imagens/logo_bateria.png'
+import logo from "./assets/imagens/logo_bateria.png";
+import moura from "./assets/imagens/moura-256.png";
+import heliar from "./assets/imagens/heliar-256.png";
+import acdelco from "./assets/imagens/acdelco-256.png";
+
 
 function App() {
   return (
@@ -18,11 +22,6 @@ function App() {
           <div className="logo">
             <div className="logo-box">
               <img src={logo} alt="AGM Logo" />
-          </div>
-
-            <div>
-              <h1>AGM Baterias</h1>
-              <p>Troca de Baterias 24h</p>
             </div>
           </div>
 
@@ -34,7 +33,7 @@ function App() {
             <a href="#">Contato</a>
           </nav>
 
-          <a href="#" className="btn-yellow">
+          <a href="#" className="btn-green">
             WhatsApp
           </a>
         </div>
@@ -67,10 +66,6 @@ function App() {
               <a href="#" className="btn-green">
                 WhatsApp Agora
               </a>
-
-              <a href="#" className="btn-yellow">
-                Ligar Agora
-              </a>
             </div>
           </div>
 
@@ -86,29 +81,22 @@ function App() {
           <div className="brands-grid">
             <div className="brand-card">
               <img
-                src="https://upload.wikimedia.org/wikipedia/commons/4/4d/Logo_Moura.png"
+                src={moura}
                 alt="Moura"
               />
             </div>
 
             <div className="brand-card">
               <img
-                src="https://seeklogo.com/images/H/heliar-logo-B3D5DB22A4-seeklogo.com.png"
+                src={heliar}
                 alt="Heliar"
               />
             </div>
 
             <div className="brand-card">
               <img
-                src="https://upload.wikimedia.org/wikipedia/commons/5/5d/ACDelco_logo.svg"
+                src={acdelco}
                 alt="ACDelco"
-              />
-            </div>
-
-            <div className="brand-card">
-              <img
-                src="https://cral.com.br/wp-content/uploads/2020/09/logo-cral.png"
-                alt="Cral"
               />
             </div>
           </div>
