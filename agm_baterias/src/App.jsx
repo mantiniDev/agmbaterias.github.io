@@ -9,6 +9,16 @@ const WHATSAPP =
 const PHONE = "tel:+5519999939784";
 const DEV_SITE = "https://mantini.ia.br";
 
+// Função de conversão do Google Ads
+const trackConversion = () => {
+  if (window.gtag) {
+    window.gtag("event", "conversion", {
+      send_to: "AW-18152960059/BGP4CKPU_6wcELvggNBD",
+      transaction_id: "",
+    });
+  }
+};
+
 function App() {
   return (
     <div>
@@ -29,13 +39,12 @@ function App() {
             </div>
           </div>
 
-          {/* nav removida */}
-
           <a
             href={WHATSAPP}
             target="_blank"
             rel="noopener noreferrer"
             className="btn-green"
+            onClick={trackConversion}
           >
             WhatsApp
           </a>
@@ -50,7 +59,6 @@ function App() {
           <div className="hero-content">
             <div className="badge">⚡ TROCA DE BATERIA 24 HORAS</div>
 
-            {/* Logo grande ao lado do texto */}
             <div className="hero-logo-title">
               <div>
                 <h2>
@@ -76,10 +84,11 @@ function App() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-green"
+                onClick={trackConversion}
               >
                 📲 WhatsApp Agora
               </a>
-              <a href={PHONE} className="btn-yellow">
+              <a href={PHONE} className="btn-yellow" onClick={trackConversion}>
                 📞 Ligar Agora
               </a>
             </div>
@@ -167,12 +176,19 @@ function App() {
           <div className="footer-contact">
             <h4>Contato</h4>
             <p>
-              <a href={WHATSAPP} target="_blank" rel="noopener noreferrer">
+              <a
+                href={WHATSAPP}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={trackConversion}
+              >
                 📲 (19) 99993-9784
               </a>
             </p>
             <p>
-              <a href={PHONE}>📞 (19) 99993-9784</a>
+              <a href={PHONE} onClick={trackConversion}>
+                📞 (19) 99993-9784
+              </a>
             </p>
             <p>📍 Campinas - SP</p>
             <p>🟢 Atendimento 24h</p>
